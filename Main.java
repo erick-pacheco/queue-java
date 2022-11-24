@@ -22,11 +22,10 @@ class Main {
       myQueue.offer(item);
     }
 
-    /* Step 6 */
+    /* Step 6: refactored */
     for (String item : myQueue) {
-      log(item);
+      log(myQueue.poll());
     }
-
   }
 
   public static void log(Object message) {
